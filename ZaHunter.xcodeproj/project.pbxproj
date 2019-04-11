@@ -12,6 +12,7 @@
 		5F3D5EF6225510700057E75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D5EF4225510700057E75A /* Main.storyboard */; };
 		5F3D5EF8225510710057E75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D5EF7225510710057E75A /* Assets.xcassets */; };
 		5F3D5EFB225510710057E75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D5EF9225510710057E75A /* LaunchScreen.storyboard */; };
+		5F9C58B822566B60002CA036 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C58B722566B60002CA036 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5F3D5EF7225510710057E75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F3D5EFA225510710057E75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3D5EFC225510710057E75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9C58B722566B60002CA036 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				5F3D5EF0225510700057E75A /* AppDelegate.swift */,
 				5F3D5EF2225510700057E75A /* ViewController.swift */,
+				5F9C58B722566B60002CA036 /* NewViewController.swift */,
 				5F3D5EF4225510700057E75A /* Main.storyboard */,
 				5F3D5EF7225510710057E75A /* Assets.xcassets */,
 				5F3D5EF9225510710057E75A /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9C58B822566B60002CA036 /* NewViewController.swift in Sources */,
 				5F3D5EF3225510700057E75A /* ViewController.swift in Sources */,
 				5F3D5EF1225510700057E75A /* AppDelegate.swift in Sources */,
 			);

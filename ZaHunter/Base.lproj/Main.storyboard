@@ -32,14 +32,83 @@
                                 <action selector="whenZoom:" destination="BYZ-38-t0r" id="QaT-PI-fV8"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="myPizzaIcon" id="1ea-J1-vbY">
+                            <connections>
+                                <action selector="whenPizz:" destination="BYZ-38-t0r" id="KUS-5y-UAB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="9aQ-hX-YYg" id="EfE-WK-asN"/>
+                        <segue destination="AIe-5r-8gd" kind="presentation" identifier="Bungus" id="qOL-su-yBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="Myh-V0-nQ8">
+            <objects>
+                <viewController id="AIe-5r-8gd" customClass="NewViewController" customModule="ZaHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="muC-KO-0O7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT8-F0-Uyu">
+                                <rect key="frame" x="120" y="486" width="135" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="whenDismiss:" destination="lJG-TN-QFo" eventType="touchUpInside" id="4sN-RY-2DZ"/>
+                                    <action selector="whenDismissed:" destination="lJG-TN-QFo" eventType="touchUpInside" id="8Ie-5C-i3x"/>
+                                    <action selector="whenDismissed:" destination="AIe-5r-8gd" eventType="touchUpInside" id="9z6-Rh-X7m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-1N-U0O">
+                                <rect key="frame" x="16" y="20" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-oX-ni2">
+                                <rect key="frame" x="16" y="129" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bi-9m-1gg">
+                                <rect key="frame" x="16" y="238" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udg-Ov-xb3">
+                                <rect key="frame" x="16" y="347" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ziq-KL-xSD"/>
+                    </view>
+                    <connections>
+                        <outlet property="addLabel" destination="GDL-oX-ni2" id="HLl-xi-bXA"/>
+                        <outlet property="distLabel" destination="udg-Ov-xb3" id="Lfl-bd-FPk"/>
+                        <outlet property="phonLabel" destination="5bi-9m-1gg" id="prt-yo-7EP"/>
+                        <outlet property="titleLabel" destination="XdA-1N-U0O" id="8Ih-Af-CgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAo-HS-DdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lJG-TN-QFo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qpl-7L-dXW">
@@ -60,4 +129,7 @@
             <point key="canvasLocation" x="242" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="myPizzaIcon" width="12" height="12"/>
+    </resources>
 </document>
