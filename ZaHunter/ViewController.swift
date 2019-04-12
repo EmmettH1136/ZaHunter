@@ -70,6 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 		button.tag = 1
 		pin.rightCalloutAccessoryView = button
 		let dirButton = UIButton(type: .detailDisclosure)
+		dirButton.setImage(UIImage(named: "MyPizzaPathIcon"), for: .normal)
 		pin.leftCalloutAccessoryView = dirButton
 		dirButton.tag = 2
 		return pin
